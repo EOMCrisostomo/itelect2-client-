@@ -5,12 +5,6 @@ import "./App.css";
 
 const API = import.meta.env.VITE_API_URL;
 
-const STARTING_TASKS = [
-  { id: 1, title: "Do dishes", dueDate: "2026-11-11" },
-  { id: 2, title: "Study", dueDate: "2026-11-05" },
-  { id: 3, title: "Create Video Edit", dueDate: "2026-11-08" },
-];
-
 function App() {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
